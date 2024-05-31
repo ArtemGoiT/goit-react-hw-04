@@ -8,8 +8,8 @@ const ImageCard = ({ image, openModal }) => {
     <div>
       <img
         src={image.urls.small}
-        alt={image.alt.description}
-        className={css.ImageCard}
+        alt={image.alt_description}
+        className={css.imageContainer}
         onClick={handleClick}
       />
     </div>

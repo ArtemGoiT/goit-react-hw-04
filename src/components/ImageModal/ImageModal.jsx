@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import ReactModal from "react-modal";
 import css from "./ImageModal.module.css";
-import { useEffect } from "react";
 
-const Modal = ({ isOpen, closeModal, image }) => {
+const ImageModal = ({ isOpen, closeModal, image }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -24,7 +24,7 @@ const Modal = ({ isOpen, closeModal, image }) => {
       className={css.Modal}
       shouldCloseOnOverlayClick={true}
     >
-      <div className={css.modalimg}>
+      <div className={css.imgContainer}>
         {image && (
           <img src={image.urls.regular} alt="Selected" className={css.img} />
         )}
@@ -32,4 +32,5 @@ const Modal = ({ isOpen, closeModal, image }) => {
     </ReactModal>
   );
 };
-export default Modal;
+
+export default ImageModal;

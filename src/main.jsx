@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import ReactModal from "react-modal";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import "modern-normalize";
+import "./components/css/index.css";
+
+import App from "./App.jsx";
+
+// Set the root app element for accessibility
+ReactModal.setAppElement("#root");
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

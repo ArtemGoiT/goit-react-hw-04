@@ -1,4 +1,4 @@
-.ImageGallery {
+.galleryList {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -7,17 +7,17 @@
   gap: 20px;
 }
 
-.ImageGallery li {
+.galleryList li {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.ImageGallery li:hover {
+.galleryList li:hover {
   transform: scale(1.05);
 }
-.ImageGallery img {
+.galleryList img {
   width: 100%;
   height: 150px;
   object-fit: cover;
