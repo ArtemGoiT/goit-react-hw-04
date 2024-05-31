@@ -1,5 +1,5 @@
 import ReactModal from "react-modal";
-import css from "./ModalReact.module.css";
+import css from "./ImageModal.module.css";
 import { useEffect } from "react";
 
 const Modal = ({ isOpen, closeModal, image }) => {

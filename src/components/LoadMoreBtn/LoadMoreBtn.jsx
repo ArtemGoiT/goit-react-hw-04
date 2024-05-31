@@ -1,4 +1,4 @@
-import css from "./BtnLoader.module.css";
+import css from "./LoadMoreBtn.module.css";
 
 const BtnLoader = ({ onLoadBtn }) => {
   const handleClick = (event) => {
