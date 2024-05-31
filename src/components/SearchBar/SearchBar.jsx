@@ -14,16 +14,23 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <header className={css.barHeder}>
+    <header className={css.barHeader}>
       <Formik initialValues={{ query: "" }} onSubmit={handleSubmit}>
-        <Form>
+        <Form className={css.searchForm}>
           <Field
             type="text"
             name="query"
             placeholder="Search images and photos"
+            className={css.searchInput}
           />
-          <button type="submit">Search</button>
-          <ErrorMessage name="query" component="div" />
+          <button type="submit" className={css.searchButton}>
+            Search
+          </button>
+          <ErrorMessage
+            name="query"
+            component="div"
+            className={css.errorMessage}
+          />
         </Form>
       </Formik>
     </header>
