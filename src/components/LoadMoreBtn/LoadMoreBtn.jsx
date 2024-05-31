@@ -1,9 +1,9 @@
 import css from "./LoadMoreBtn.module.css";
 
-const BtnLoader = ({ onLoadBtn }) => {
+const LoadMoreBtn = ({ onLoadMore }) => {
   const handleClick = (event) => {
     event.preventDefault();
-    onLoadBtn();
+    onLoadMore();
   };
   return (
     <button onClick={handleClick} className={css.btn}>
@@ -11,4 +11,5 @@ const BtnLoader = ({ onLoadBtn }) => {
     </button>
   );
 };
-export default BtnLoader;
+
+export default LoadMoreBtn;
